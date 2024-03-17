@@ -1,0 +1,51 @@
+.application {
+  .nav-panel {
+    padding: 0 20px;
+    display: flex;
+    background: #222;
+
+    .MuiTab-root {
+      font-weight: bold;
+      color: #b5b5b5;
+      &.Mui-selected {
+        color: #fff;
+      }
+    }
+    .MuiTabs-indicator {
+      background: #b5b5b5;
+    }
+  }
+  .app-content {
+    padding: 20px;
+
+    @include respond-down(S) {
+      padding: 20px 0 0 0;
+    }
+  }
+
+  .page {
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      justify-content: space-between;
+
+      @include respond-down(S) {
+        padding: 0 20px;
+      }
+  
+      h2 {
+        margin: 0 20px 0 0;
+      }
+
+      .header-buttons {
+        display: flex;
+        align-items: center;
+
+        .btn {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}

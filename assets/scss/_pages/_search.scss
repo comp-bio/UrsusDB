@@ -1,0 +1,54 @@
+.search-page {
+  .search-header {
+    background: #f1f1f1;
+    padding: 10px 0;
+
+    @include respond-down(M) {
+      padding: 0 20px;
+    }
+
+    .queryBuilder {
+      .ruleGroup-body {
+        select {
+          @include respond-down(M) {
+            width: 30%;
+          }
+        }
+      }
+    }
+
+    .main-input {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      //margin-bottom: 16px;
+
+      @include respond-down(M) {
+        flex-direction: column;
+      }
+  
+      .search-input {
+        width: 500px;
+        padding: 2px 6px;
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+
+        @include respond-down(M) {
+          width: 100%;
+          margin-right: 0;
+        }
+  
+        button {
+          svg {
+            width: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.queryBuilder {
+  padding-top: 16px;
+}

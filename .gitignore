@@ -9,6 +9,6 @@ _data
 __pycache__
 *.zip
 *.library
-./upload.sh
-./notes.md
+upload.sh
+notes.md
 

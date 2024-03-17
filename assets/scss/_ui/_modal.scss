@@ -1,0 +1,53 @@
+.MuiDialogTitle-root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .MuiButtonBase-root {
+    margin: -10px;
+  }
+}
+
+.modal-footer {
+  justify-content: space-between !important;
+}
+
+
+
+
+.modal-bg {
+  position: absolute;
+  z-index: 20;
+  background: rgba(0,0,0,0.35);
+}
+
+.lightbox {
+  position: fixed;
+  justify-content: center;
+
+  .image-wrapper {
+    z-index: 100;
+    position: relative;
+
+    .close {
+      border-radius: 30px;
+      height: 34px;
+      width: 34px;
+      background: rgba(255,255,255,0.7);
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      align-items: center;
+    }
+
+    .image-full {
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      max-height: 100vh;
+      max-width: 100vw;
+    }
+  }
+}

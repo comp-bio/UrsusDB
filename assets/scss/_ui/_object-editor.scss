@@ -1,0 +1,92 @@
+.object-editor {
+  max-width: 820px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .input-block {
+    width: 380px;
+
+    & > div {
+      width: 100%;
+    }
+
+    .locations-wrapper {
+      display: flex;
+
+      .lat {
+        .MuiInputBase-root {
+          margin-right: -1px;
+          border-radius: 4px 0 0 4px;
+        }
+      }
+      .lng {
+        .MuiInputBase-root {
+          // margin-right: -1px;
+          border-radius: 0 4px 4px 0;
+        }
+      }
+    }
+  }
+
+  .upload-image-wrapper {
+    .current-images {
+      display: flex;
+      flex-wrap: wrap;
+
+      .image-item {
+        position: relative;
+
+        .img {
+          width: 90px;
+          height: 90px;
+          background: #eee no-repeat center center;
+          background-size: cover;
+          position: relative;
+          z-index: 10;
+          box-shadow: inset 0 0 0 3px rgba(#2846ff, 0);
+          transition: box-shadow 0.1s ease;
+
+          &:hover {
+            box-shadow: inset 0 0 0 3px rgba(#2846ff, 1);
+          }
+        }
+
+        .btn {
+          width: 30px;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+          z-index: 20;
+          position: absolute;
+          right: 0px;
+          top: 0px;
+          opacity: 0;
+          transition: opacity 0.1s ease;
+
+          svg {
+            margin: 0;
+          }
+        }
+
+        &.add-images {
+          height: 90px;
+          width: 90px;
+          text-align: center;
+          display: inline-block;
+          border-radius: 0;
+          //white-space: normal;
+          //background: ;
+        }
+
+        &:hover {
+          .btn {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

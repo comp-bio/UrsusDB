@@ -1,0 +1,51 @@
+.input {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 1.4em;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-top-color: silver;
+  border-radius: 3px;
+  box-shadow: none;
+  outline: none;
+  transition: border 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:not(:disabled) {
+    &:hover {
+      //border-color: #4d90fe;
+      border: 1px solid #b9b9b9;
+      border-top-color: #a0a0a0;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    }
+    &:active, &:focus {
+      // border-color: #BE020A;
+      border-color: #4d90fe;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
+    }
+  }
+  &:disabled {
+    background-color: #fafafa;
+  }
+
+  &.input-compact {
+    border-radius: 0;
+    height: 30px;
+    padding: 5px 8px;
+  }
+}
+
+.input-block {
+  &:not(&:last-child) {
+    margin-bottom: 1em;
+  }
+
+  .label {
+    margin-bottom: 3px;
+    display: block;
+  }
+}
+
+input[type="checkbox"] {
+
+}
