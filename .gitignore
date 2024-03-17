@@ -1,0 +1,14 @@
+.DS_Store
+.idea
+node_modules
+test/UMA
+# build/main-*
+# build/manifest.json
+yarn.lock
+_data
+__pycache__
+*.zip
+*.library
+./upload.sh
+./notes.md
+
